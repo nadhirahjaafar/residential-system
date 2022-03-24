@@ -1,0 +1,80 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Aug 04, 2021 at 04:10 PM
+-- Server version: 5.7.35-cll-lve
+-- PHP Version: 7.4.21
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `amzarine_st1g5`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `visit`
+--
+
+CREATE TABLE `visit` (
+  `visit id` int(8) NOT NULL,
+  `visitor name` varchar(200) NOT NULL,
+  `resident name` varchar(200) NOT NULL,
+  `relationship` varchar(100) NOT NULL,
+  `resident address` varchar(200) NOT NULL,
+  `time in` time NOT NULL,
+  `time out` time NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `visit`
+--
+
+INSERT INTO `visit` (`visit id`, `visitor name`, `resident name`, `relationship`, `resident address`, `time in`, `time out`) VALUES
+(1, 'RAJU A/L GOPAL', 'NIRMALA A/P MUTUSAMY', 'Family Member', 'BLOK B, NO 40, APARTMENT DAMAI, TAMAN DAHLIA, 46100, PETALING JAYA, SELANGOR', '10:30:00', '21:00:00'),
+(2, ' ZUHAILI BIN RAZLAN', 'MUHAMMAD ZIKRI BIN HISHAM', 'Relative', 'BLOK A, NO 13, APARTMENT DAMAI, TAMAN DAHLIA, 46100, PETALING JAYA, SELANGOR', '11:59:00', '16:00:00'),
+(3, 'SYAFIQ BIN ABU', 'FARAH BINTI ARSHAD', 'Relative', 'BLOK C, NO 16 APARTMENT DAMAI, TAMAN DAHLIA, 56100, PETALING JAYA, SELANGOR', '16:10:00', '19:10:00'),
+(4, 'INTAN BINTI SAZALI', 'AMIRUL HAFIZ BIN ZAINAL', 'Friend', 'BLOK B, NO 26, APARTMENT DAMAI, TAMAN DAHLIA, 56100, PETALING JAYA, SELANGOR', '14:45:00', '18:30:00'),
+(5, 'LEE MEI LING', 'CONG LIU YANG', 'Family Member', 'BLOK B, NO 9, APARTMENT DAMAI, TAMAN DAHLIA. 56100, PETALING JAYA, SELANGOR', '12:35:00', '19:03:00'),
+(6, ' SYASYA BINTI HAMIZAN', 'QISTINA BINTI ABDUL GHANI', 'Relative', 'BLOK A, NO 22, APARTMENT DAMAI, TAMAN DAHLIA, 46100, PETALING JAYA, SELANGOR', '13:00:00', '20:05:00'),
+(7, 'AMIRA BINTI SULAIMAN', 'FARAH BINTI ARSHAD', 'Friend', 'BLOK C, NO 16 APARTMENT DAMAI, TAMAN DAHLIA, 56100, PETALING JAYA, SELANGOR', '18:06:00', '10:00:00'),
+(8, 'NOOR AFIQAH BINTI RAHMAT', 'NAJAH SUHAILA BINTI YAACOB', 'Family Member', 'BLOK C, NO 55, APARTMENT  DAMAI, TAMAN DAHLIA. 56100, PETALING JAYA, SELANGOR', '13:03:00', '09:23:00'),
+(9, 'KUMARAN A/L SINGGAH', 'KRISHNA A/L RAJU', 'Friend', 'BLOK D, NO 43, APARTMENT  DAMAI, TAMAN DAHLIA. 56100, PETALING JAYA, SELANGOR', '12:30:00', '06:10:00'),
+(10, 'LI LILIAN', 'TAN JING XI', 'Relative', 'BLOK C, NO 15, APARTMENT DAMAI, TAMAN DAHLIA, 56100, PETALING JAYA, SELANGOR', '00:05:00', '10:10:00'),
+(11, 'NUR EZATUL BINTI ABU', 'NAJAH SUHAILA BINTI YAACOB', 'Family Member', 'BLOK C, NO 55, APARTMENT  DAMAI, TAMAN DAHLIA. 56100, PETALING JAYA, SELANGOR', '15:10:00', '10:14:00');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `visit`
+--
+ALTER TABLE `visit`
+  ADD PRIMARY KEY (`visit id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `visit`
+--
+ALTER TABLE `visit`
+  MODIFY `visit id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
